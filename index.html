@@ -11,17 +11,23 @@
 
     <title>HappenVR</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
     <link href="css/main.css" rel="stylesheet">
+
+<!-- JS -->
 
   </head>
 
   <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- NAVBAR SECTION -->
     <div class="navbar-wrapper">
       <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header page-scroll">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -31,11 +37,11 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="#">
-                <!-- <img src="images/happen_logo.png"/> -->
-                HappenVR
+                <img id="nav_logo" alt="Brand" src="images/website_logo.png"/>
+                <span>HappenVR</span>
               </a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
+            <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav pull-right">
                 <li><a href="blog.html" class="page-scroll">Blog</a></li>
                 <li><a href="#contact" class="page-scroll">Contact</a></li>
@@ -45,6 +51,8 @@
         </nav>
       </div>
     </div>
+
+    <!-- MAIN CONTENT SECTION -->
 
     <div id="site-content" class="container">
 
@@ -59,14 +67,14 @@
       <div id="intro-section" class="container">
 
         <div class="row">
-          <div class="col-md-10 col-md-offset-1 section-title">
+          <div class="col-md-8 col-md-offset-2 section-title">
             <h1>Enthralling Immersion</h1>
             <p>HappenVR aims be the world's most advanced virtual reality gloves for stroke therapy. By integrating cutting-edge tactile and force feedback technologies with immersive vitual reality, HappenVR helps stroke patients to quickly recover their upper-limb functions.</p>
           </div>
         </div>
 
         <div id="hexagon-section" class="row dashlet-row">
-          <div class="col-sm-5 col-sm-offset-1">
+          <div class="col-sm-4 col-sm-offset-1">
             
             <img id="glove_model" src="images/glove_model.png"/>
             <p>HappenVR glove has a minimalistic mechanical design but is equipped with powerful tactile and force feedback systems for each finger</p>
@@ -92,9 +100,9 @@
       <!-- CORE FEATURES SECTION -->
       <div id="core-features" class="container">
         <div class="row">
-          <div class="col-md-10 col-md-offset-1 section-title">
+          <div class="col-md-8 col-md-offset-2 section-title">
             <h1>Core Features</h1>
-            <p>With these 4 main technologies, HappenVR significantly reduce the time and efforts that patients spend on rehabilitation while deliver quality recovery metrics for the patient. Stroke patients can use our onboard sensors to directly track hand movements and range in the comfort of their own home. Our software also tracks and learns the training progress and automatically adjust the exercise difficulty.
+            <p>With these 4 main technologies, HappenVR significantly reduces the time and efforts that patients spend on rehabilitation while delivering quality recovery metrics for the patient. Stroke patients can use our onboard sensors to directly track hand movements and range in the comfort of their own home. Our software also learns the training progress and automatically adjust the exercise difficulty.
             </p>
           </div>
         </div>
@@ -129,7 +137,7 @@
       <!-- TEAM SECTION -->
       <div id="team-section" class="container">
         <div class="row">
-          <div class="col-md-10 col-md-offset-1 section-title">
+          <div class="col-md-8 col-md-offset-2 section-title">
             <h1>Team</h1>
             <p>The HappenVR team has years of experience working in related industries, which include IDEO, Tesla, Pebble, University of Waterloo, and BMW. </p>
           </div>
@@ -204,11 +212,6 @@
         </div>
       </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"/>
-    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"/>
-    <script src="js/bootstrap.min.js"/>
-    <script src="js/main.js"/>
     
   </body>
 </html>
