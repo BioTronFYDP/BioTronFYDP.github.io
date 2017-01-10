@@ -28,7 +28,11 @@ h1 {
 	padding-right: 20px;
 }
 
-
+#nav_logo {
+	height: 26px;
+	width: auto;
+	display: inline;
+}
 
 /*BLOG SECTION*/
 #blog-section {
