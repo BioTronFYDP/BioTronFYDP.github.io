@@ -1,0 +1,64 @@
+/* Color Theme
+defaultBackgroundLightOrangeColor: #FFF4EF;
+secondary background light blue color: #EBFFFE;
+SubtitleTextColor: #555555;
+OrangeLinkColor: #E0A514;
+DefaultLogoOrangeColor: #FF9B00;
+*/
+
+/*Basics*/
+
+div {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,sans-serif;
+}
+
+h1 {
+	font-family: "Helvetica Neue", Helvetica,sans-serif;
+}
+
+.navbar {
+	position: fixed;
+	-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+	transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+
+#navbar {
+	padding-right: 20px;
+}
+
+
+
+/*BLOG SECTION*/
+#blog-section {
+	margin-top: 70px;
+	
+}
+
+
+.blog-entry {
+	background-color: #FFF4EF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.subtitle {
+	color: #555555;
+}
+
+.blog-body {
+	font-size: 12pt;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+/*Footer*/
+
+footer {
+	height: 40px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}

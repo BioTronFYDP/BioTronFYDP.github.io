@@ -1,0 +1,211 @@
+
+/* Color Theme
+defaultBackgroundLightOrangeColor: #FFF4EF;
+secondary background light blue color: #EBFFFE;
+SubtitleTextColor: #555555;
+OrangeLinkColor: #E0A514;
+DefaultLogoOrangeColor: #FF9B00;
+*/
+
+/*Basics*/
+
+div {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,sans-serif;
+}
+
+h1 {
+	font-family: "Helvetica Neue", Helvetica,sans-serif;
+}
+
+.navbar {
+	position: fixed;
+	-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+	transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+
+#navbar {
+	padding-right: 20px;
+}
+
+/*generic sections*/
+
+.section-title {
+	text-align: center;
+	/*background-color: #FFF4EF;*/
+	padding: 15px;
+}
+
+.section-title > h1 {
+	font-size: 26pt;
+}
+
+.section-title > p {
+	font-size: 13pt;
+	color: #555555;
+}
+
+#site-content{
+	width: 100%;
+	height: 600px;
+	margin: 70px 0px 50px;
+	background: url("../images/background.jpg") center fixed no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+/*welcome section*/
+
+div#card{
+	background: rgba(0,0,0,0.3);
+	position: relative;
+	height: 400px;
+	top: 100px;
+}
+
+#happen-logo-caption {
+	clear: both;
+}
+
+/*Contents of the welcome section*/
+
+#profile-img {
+	width: 150px;
+	height: 150px;
+}
+
+#card-content{
+	color: white;
+	text-align: center;
+}
+
+/*#card-content > h2*/
+#happen-logo {
+	font: 40pt sans-serif;
+}
+
+/*#card-content > p*/
+#happen-logo-caption {
+	font: 20pt sans-serif;
+	color: #C0C0C0;
+}
+
+
+/*Intro SECTION*/
+
+#intro-section {
+	margin-top: 250px;
+	background-color: #FFF4EF;
+}
+
+.dashlet-row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.dashlet {
+	padding: 10px;
+}
+
+.dashlet-content {
+	background-color: #dfdfdf;
+	border-radius: 7px;
+}
+
+.dashlet-header {
+	background-color: rgba(255,255,255,0.3);
+	height: 80px;
+	width: auto;
+	text-align: center;
+}
+
+.project-title {
+	font-size: 17pt;
+}
+
+.project-subtitle {
+	font-size: 12pt;
+	color: #555555;
+}
+
+
+/*new intro properties*/
+#hexagon-section img {
+	/*background: url("../images/orange_hex.png");*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#glove_model {
+	width: 60%;
+	height: auto;
+}
+
+#oculus_leap {
+	margin-top: 30px;
+	width: 80%;
+	height: auto;
+}
+
+
+/*Core Features Section*/
+#core-features {
+	background-color: #EBFFFE;
+}
+
+#core-features-content img {
+	height: 100px;
+	width: auto;
+}
+
+
+
+/*TEAM SECTION*/
+#team-section {
+	background-color: #FFF4EF;
+}
+
+
+#team-content img {
+	height: 160px;
+	width: auto;
+}
+
+
+/*CONTACT SECTION*/
+
+#contact-title {
+	text-align: center;
+}
+
+#contact-body {
+	text-align: center;
+	padding: 10px;
+}
+
+.contact-link {
+	font-style: normal;
+	color:#E0A514; /*darkened*/
+}
+
+/*Footer*/
+
+footer {
+	height: 40px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+/*Common*/
+
+.vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+

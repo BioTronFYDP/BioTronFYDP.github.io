@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/website_logo.png">
+
+    <title>HappenVR</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header page-scroll">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                <!-- <img src="images/happen_logo.png"/> -->
+                HappenVR
+              </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav pull-right">
+                <li><a href="#" class="page-scroll">Blog</a></li>
+                <li><a href="index.html#contact" class="page-scroll">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- BLOG ENTRY SECTION -->
+    <div id="blog-section" class="container">
+
+      <div class="row blog-entry">
+        <div class="col-md-10 col-md-offset-1 section-title">
+          <h1>A Brief Introduction to HappenVR</h1>
+          <p class="subtitle">January 10, 2017 | by: Si Te Feng</p>
+          <hr/>
+        </div>
+
+
+
+        <div class="col-md-8 col-md-offset-2">
+          <p class="blog-body">Stroke is the leading cost of adult disability in Canada as well as most countries around the world. There exists a need to improve conventional therapy since only 10% of stroke patients in Canada recover completely [1]. Studies have shown that by increasing the intensity and quantity of exercises, as well as improving patient engagement and motivation, stroke recovery can be improved. Team Happen aims to develop a Virtual Reality Haptic Glove that provides immersive stroke therapy, recovery metrics based on data from the user’s kinematics, and the ability to train independently at home. 
+
+          <br/><br/>The final solution must be functional for at least one hand, provide visual, force and tactile feedbacks while the patient interacts with a virtual environment, and must be safe to use. While considering potential solutions, the team used selection criteria including minimum interaction delay, as well as a high range of motion with minimal biomechanical impedance to ensure an immersive experience for the user. The final solution can be broadly divided into 4 systems which include force feedback, tactile feedback, motion tracking, and software for virtual reality and recovery metrics. Each of these systems is explored in this report, where each team member contributed to their respective section.
+
+          <br/><br/>The force feedback system involves the use of a pull-wire soft exoskeleton that restricts the fingers through soft cables driven by stepper motors. This solution allows the user to experience force feedback and physical restrictions while interacting with virtual objects. In terms of tactile feedback, the final solution selected is the electrotactile system, where regulated current is passed through the skin of the fingertip to directly stimulate the nerve fibers connected to mechanoreceptors. This results in perception of tactile sensations like pressure, vibration, and skin stretch. This solution allows the user to experience the shape and texture of virtual objects, providing an immersive experience aimed at improving stroke therapy. The third system is the motion tracking system, which involves the use of Inertial Measurement Unit (IMU) sensors to track the position and orientation of the hand, as well as the pull-wire system coupled with rotary encoders to track finger joint angles. Lastly, the software system for virtual reality and recovery metrics involves the use of a 3D graphics framework called SceneKit, a 3D model creation application called Blender, and the Arduino embedded platform. It provides a critical role in interfacing between sensors and actuators through digital control systems, while providing intelligent recovery tracking and expert metrics for stroke patients.
+
+          <br/><br/>In terms of project budget, the current total is estimated to be 2,100 CAD, where 1081.09 CAD of which are expenses to date (September-December 2016). Meanwhile, 1,000 CAD is set as the budget for the 4B term (January - March 2017).
+
+          <br/><br/>The team is on schedule to completing the final prototype for the Capstone Symposium in March 2017. Since September 2016, the team has completed early prototyping and final design for all 4 major systems, and will proceed to implementing and testing the final solutions for each system. In addition, the team will initiate system integration in early February followed by system testing, fine tuning, and demo preparation in late February.
+
+          <br/><br/>*[1] Ontario Stroke Network, "Stroke Stats and Facts," Cardiac Care Network, 2016. [Online]. Available: http://ontariostrokenetwork.ca/information-about- stroke/stroke-stats-and-facts/. [Accessed 4 December 2016].
+          </p>
+        </div>
+      </div>
+
+<!-- End of blog section -->
+    </div> 
+
+
+
+
+    <div class="row">
+      <div class="col-xs-12">
+        <footer>HappenVR © 2016-2017 ALL RIGHTS RESERVED</footer>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"/>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"/>
+    <script src="js/bootstrap.min.js"/>
+    <script src="js/main.js"/>
+    
+  </body>
+</html>
