@@ -71,7 +71,7 @@ div#card{
 	background: rgba(0,0,0,0.3);
 	position: relative;
 	height: 400px;
-	top: 100px;
+	margin-top: 100px;
 }
 
 #happen-logo-caption {
@@ -81,12 +81,8 @@ div#card{
 
 /*Contents of the welcome section*/
 
-#profile-img {
-	width: 150px;
-	height: 150px;
-}
-
 #card-content{
+	margin-top: -100px;
 	color: white;
 	text-align: center;
 }
@@ -106,7 +102,7 @@ div#card{
 /*Intro SECTION*/
 
 #intro-section {
-	margin-top: 250px;
+	margin-top: 120px;
 	background-color: #FFF4EF;
 }
 
