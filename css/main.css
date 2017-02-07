@@ -167,10 +167,20 @@ div#card{
 }
 
 
+/*CORE MISSION SECTION*/
+#our-mission-section {
+	background-color: #FFF4EF;
+}
+
+.img_stretch {
+	width: 100%;
+	height: 100%;
+}
+
 
 /*TEAM SECTION*/
 #team-section {
-	background-color: #FFF4EF;
+	background-color: #EBFFFE;
 }
 
 
