@@ -184,10 +184,9 @@ div#card{
 }
 
 
-
 #team-content img {
-	width: 90%;
-	height: auto;
+	height: 140px;
+	/*width: 90%;*/
 }
 
 
