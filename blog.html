@@ -62,15 +62,13 @@
 
         <div class="col-md-10 col-md-offset-1">
           <p class="blog-body">
-            At the center of our enhanced virtual reality experience is the custom designed glove with tactile feedback system. Tactile feedback is the simulation of touch, so that patients can not only see and listen to 3D objects in the virtual environment, but also touch and feel the objects too. To achieve this, team Happen has been working dilligently to design a TENS (Transcutaneous Electrical Neural Stimulation) Mesh that touches the inner sides of the fingers. The TENS mesh is envisioned to be a flexible and thin piece of PCB (printed circuit board) with circular gold plated electrodes that are around 1mm in diameter and 2mm apart. The TENS mesh simulates the touch sensation by delivering a tiny varying current (around 1-3 mA) with various frequency, phase, and current travel patterns. 
+            At the center of our enhanced virtual reality experience is the custom designed glove with tactile feedback system. Tactile feedback is the simulation of touch, so that patients can not only see and listen to 3D objects in the virtual environment, but also touch and feel the objects too. To achieve this, team Happen has been working dilligently to design a TENS (Transcutaneous Electrical Neural Stimulation) mesh that touches the inner sides of the fingers. The TENS mesh is envisioned to be a flexible and thin piece of PCB (printed circuit board) with circular gold plated electrodes that are around 1mm in diameter and 2mm apart. The TENS mesh simulates the touch sensation by delivering a tiny varying current (around 1-3 mA) with various frequency, phase, and current travel patterns. 
 
             <br/><br/>Yesterday, the electrical team has successfully produced both anodic and cathodic electrical stimulation from a 4 by 4 electrode grid to the finger for the first time. The words anodic and cathodic refer to the current travel direction. For Anodic stimulation, positive current travels from the inner electrode to the outer electrodes concentrically, whereas cathodic stimulation does the opposite. The production of the sensation is a huge milestone for the team as it validates almost all of the previous engineering work that went into the design of the TENS circuit. The reliable sensation was made possible by the steady current provided by the current regulation circuit that the team has been working on for the last 3 months. The resulting stimulation feels as though the electrodes are pushing up against the finger, when in fact, there are no physical movements. When the input signal is set to be a 100 microseconds period square wave, the resulting sensation is an occilating vertical force of around 12 Hz. The current understanding is that both increase in phase of the signal and output current would increase the force sensation. The photo below shows the testing setup from yesterday.
 
             </p>
 
-            <div class="col-xs-12">
-              <img class="col-xs-8 col-xs-offset-2" src="images/church1.jpg"/>
-            </div>
+            <img class="col-xs-8 col-xs-offset-2" src="images/church1.jpg"/>
 
             <p class="blog-body">
              Now that the prototype circuit has been validated, the electrical team has decided that the next step is to reselect the electrical components from breadboard DIP components to PCB SMT components, so that we can reduce the size of the electrical circuit. In addition, the team will also use EAGLE to design PCB for both the current regulation circuit and TENS mesh. The TENS mesh will be printed on a ridgid PCB as usual during prototyping stages, but will be enventually converted to a flexible design. In order to try out different configurations, 2 TENS PCB will be designed: a 3 by 3 electrode grid and a 4 by 4 electrode grid. Each TENS PCB will be placed under one segment of the finger with a total of 14 pieces. Additional pieces might be placed in the palm areas as well. 
@@ -87,6 +85,42 @@
       <hr/>
       <!-- ************ -->
 
+
+      <div class="row blog-entry">
+        <div class="col-md-10 col-md-offset-1 section-title">
+          <h1>Our Virtual Environment Prototype with Unity 3D</h1>
+          <p class="subtitle">January 28, 2017 | by: Si Te Feng</p>
+          <hr/>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1">
+          <p class="blog-body">
+            Today is marks an exciting new milestone as the team completed the initial validation of using Unity 3D game engine as the main platform for the Happen virtual reality user interface. During the last few weeks, the team has been working on designing the game mechanics, modeling animated characters using Blender, and scripting interactions between game objects. The most significant progress however, is getting Leap Motion sensor to be fully integrated with the prototype game that we have designed. Part of interaction was made possible thanks to the Leap Motion Orion SDK which includes a "User Interaction" module allows the detected hands to hold onto a virtual object without allowing the built in Unity physics engine to push the object away as soon as there is a boundary interference. The SDK does not provide the accurate touch callback that our virtual reality glove need. We have written a custom collision detector with spheres which tells the program exactly how deep did the user's fingers sink into the object, and many other detailed parameters. With this level of information, we can then accurately control the glove stepper motor movement for force feedback, and accurately adjust the sensation intensity deliver by our TENS pads to the fingers. 
+
+            <br/><br/>The game is called Rockaway, synonymous to the beach in New York, but is actually a first person rock defense game against slow moving polygon humanoids on a futuristic spaceship. The idea is to allow the users to exercise theirs upper limb and hand movements by repeatedly grabbing various shaped rocks from an altar and throwing them at the humanoids to gain points. If the humanoid reaches the person, the team is planning on reducing the health of the player if that happens, although that interactions has not been implemented yet. We have custom made the polygon humanoid in Blender with a slew of animations, which includes crawling up from the ground, walking, crawling forward, dying while walking, dying while crawling, and jump attack. All of which will be eventually integrated into the final prototype for the 2017 Mechatronics Symposium demonstration.
+
+          </p>
+
+          <img class="col-xs-8 col-xs-offset-2" src="images/blender1.png"/>
+
+          <p class="blog-body">
+            The other game objects seen around the spaceship has been sourced from BlendSwap, a website where designers freely share their Blender creations. The team was fortunate enough to find detailed robot and turrent 3D models to use in our Rockaway game.
+
+            <br/><br/>We are already in the process of the next step in the software development, which is writing serial communication scripts in C# and C to allow the Unity game running on Windows 10 desktop to freely communicate with our Arduino microcontroller. This is essential in bridging the gap between our custom glove hardware and the Unity + Oculus + Leap Motion package. 
+
+            <br/><br/>In the coming weeks, the mechanical design will be fully manufactured and assembled, and the team hope to integrate the Rockaway game with the glove electronics by then. As one would imagine, the last step of system integration will be a challenge in many areas. The team is looking forward to the process and update this blog as new progress comes along.
+          </p>
+
+          <div class="col-xs-12">
+            <img class="col-xs-2 col-xs-offset-5" src="images/feather2.png"/>
+          </div>
+        </div>
+      </div>
+
+      <hr/>
+
+      <!-- **************** -->
+
       <div class="row blog-entry">
         <div class="col-md-10 col-md-offset-1 section-title">
           <h1>A Brief Introduction to HappenVR</h1>
@@ -95,7 +129,7 @@
         </div>
 
         <div class="col-md-10 col-md-offset-1">
-          <p class="blog-body">Stroke is the leading cost of adult disability in Canada as well as most countries around the world. There exists a need to improve conventional therapy since only 10% of stroke patients in Canada recover completely [1]. Studies have shown that by increasing the intensity and quantity of exercises, as well as improving patient engagement and motivation, stroke recovery can be improved. Team Happen aims to develop a Virtual Reality Haptic Glove that provides immersive stroke therapy, recovery metrics based on data from the user’s kinematics, and the ability to train independently at home. 
+          <p class="blog-body">Stroke is a leading cause of adult disability in Canada as well as most countries around the world. There exists a need to improve conventional therapy since only 10% of stroke patients in Canada recover completely [1]. Studies have shown that by increasing the intensity and quantity of exercises, as well as improving patient engagement and motivation, stroke recovery can be improved. Team Happen aims to develop a Virtual Reality Haptic Glove that provides immersive stroke therapy, recovery metrics based on data from the user’s kinematics, and the ability to train independently at home. 
 
           <br/><br/>The final solution must be functional for at least one hand, provide visual, force and tactile feedbacks while the patient interacts with a virtual environment, and must be safe to use. While considering potential solutions, the team used selection criteria including minimum interaction delay, as well as a high range of motion with minimal biomechanical impedance to ensure an immersive experience for the user. The final solution can be broadly divided into 4 systems which include force feedback, tactile feedback, motion tracking, and software for virtual reality and recovery metrics. Each of these systems is explored in this report, where each team member contributed to their respective section.
 

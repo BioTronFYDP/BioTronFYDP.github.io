@@ -40,13 +40,13 @@ h1 {
 
 .section-title {
 	text-align: center;
-	/*background-color: #FFF4EF;*/
 	padding: 15px;
 }
 
 .section-title > h1 {
 	font-size: 26pt;
 }
+
 
 .section-title > p {
 	font-size: 13pt;
@@ -68,34 +68,27 @@ h1 {
 /*welcome section*/
 
 div#card{
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.1);
 	position: relative;
 	height: 400px;
 	margin-top: 100px;
-}
-
-#happen-logo-caption {
-	clear: both;
-	color: #555555
 }
 
 /*Contents of the welcome section*/
 
 #card-content{
 	margin-top: -100px;
-	color: white;
 	text-align: center;
 }
 
-/*#card-content > h2*/
 #happen-logo {
 	font: 40pt sans-serif;
 }
 
-/*#card-content > p*/
 #happen-logo-caption {
+	clear: both;
 	font: 20pt sans-serif;
-	color: #C0C0C0;
+	color: #EEEEEE;
 }
 
 
