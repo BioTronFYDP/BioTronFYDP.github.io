@@ -60,6 +60,17 @@ h1 {
 	clear:both;
 }
 
+.img-fit {
+	width:80%;
+	height:auto;
+	display: block;
+    margin: auto;
+}
+
+.img-caption {
+	font-weight: bold;
+	text-align: center;
+}
 
 /*Footer*/
 
@@ -69,3 +80,4 @@ footer {
 	background-color: black;
 	color: white;
 }
+
